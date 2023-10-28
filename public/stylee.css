@@ -1,0 +1,114 @@
+/* Add beautiful background and styling to the whole page */
+body {
+  font-family: cursive, sans-serif;
+  background-color: #f4f4f4; /* Light gray background */
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Style the decorative borders on the sides */
+body::before,
+body::after {
+  content: "";
+  position: fixed;
+  top: 0;
+  height: 100%;
+  width: 10px; /* Width of the decorative borders */
+  background-color: #61bd9b; /* Light green color */
+  z-index: -1;
+}
+
+body::before {
+  left: 0;
+}
+
+body::after {
+  right: 0;
+}
+
+/* Style the heading in calligraphy font */
+h2 {
+  font-size: 36px;
+  color: #333; /* Dark gray text color */
+  margin: 20px 0;
+  text-transform: uppercase;
+  font-family: 'Dancing Script', cursive;
+}
+
+/* Style the input form and button */
+form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 0;
+}
+
+input[type="text"] {
+  padding: 10px;
+  border: none;
+  border-radius: 20px;
+  outline: none;
+  width: 300px;
+}
+
+button[type="submit"] {
+  background-color: #61bd9b; /* Light green button */
+  color: #fff; /* White text color */
+  border: none;
+  border-radius: 20px;
+  padding: 10px 20px;
+  margin-left: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s; /* Smooth hover transition */
+}
+
+/* Hover effect for buttons */
+button[type="submit"]:hover {
+  background-color: #4fa584; /* Darker green on hover */
+}
+
+/* Style the To-Do list items */
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  background-color: #fff; /* White background for list items */
+  border-radius: 10px;
+  margin: 10px 0;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 3px 3px 5px #888888; /* Add a subtle shadow */
+  transition: background-color 0.3s; /* Smooth hover transition */
+}
+
+/* Hover effect for list items */
+li:hover {
+  background-color: #f0f0f0; /* Light gray on hover */
+}
+
+/* Add a button to delete each item */
+form[style="display:inline"] {
+  display: inline;
+}
+
+button[type="submit"] {
+  background-color: #4fa584; /* Light red button for delete */
+  color: #fff; /* White text color */
+  border: none;
+  border-radius: 10px;
+  padding: 5px 10px;
+  cursor: pointer;
+  transition: background-color 0.3s; /* Smooth hover transition */
+}
+
+/* Hover effect for delete buttons */
+button[type="submit"]:hover {
+  background-color: #346c57; /* Darker red on hover */
+}
