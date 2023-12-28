@@ -1,5 +1,5 @@
 
-#Todo List 
+# Todo List 
 This is a simple to-do list web application developed using Node.js and the Express framework. The application allows users to manage their tasks by adding new items and deleting completed ones. It serves as an excellent introduction to web development with Node.js and EJS templates.
 
 ## Features
